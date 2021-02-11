@@ -10,7 +10,7 @@ class Todo extends React.Component {
         console.log(this.props)
         return (  
             <div>
-                <h2>{this.props.info.text} -- {this.props.info.priority}</h2> 
+                <h2>{this.props.info.text} -- {this.props.info.id}</h2> 
             </div>
         );
     }

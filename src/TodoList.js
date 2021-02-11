@@ -5,11 +5,10 @@ class TodoList extends React.Component {
 
     constructor(props) {
         super(props);
-    }   
-    
+    }       
     render() {
         
-        var list = this.props.todoList;
+        var list = this.props.items;
         return (  
           <div>
               {
@@ -21,5 +20,4 @@ class TodoList extends React.Component {
     }
 
 }
-
 export default TodoList;

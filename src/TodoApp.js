@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoList from './TodoList';
-
+var fechaNow = new Date()
 class TodoApp extends React.Component {
     constructor(props) {
       super(props);
