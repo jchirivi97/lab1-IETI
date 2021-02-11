@@ -1,3 +1,6 @@
+### Integrante:
+
+Jimmy Armando Chirivi Nivia  
 
 ### Part 1: Create a basic React application and understand React basics
 
