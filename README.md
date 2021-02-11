@@ -53,5 +53,9 @@
 
 2. Use the following code (taken from the React website) as a reference to create a form that captures the data of a Todo activity (text, priority and date), and adds the new object to the list.
 
+![image](https://user-images.githubusercontent.com/48265107/107612921-502a6200-6c15-11eb-8963-79a9dc945eb8.png)
+
+
+![image](https://user-images.githubusercontent.com/48265107/107612872-35f08400-6c15-11eb-8a18-bc70196eea16.png)
 
 
