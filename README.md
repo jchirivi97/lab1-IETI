@@ -1,70 +1,57 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Part 1: Create a basic React application and understand React basics
 
-## Available Scripts
+1. Create a React App and test that it works:
+  npx create-react-app todo-app
+  cd todo-app
+  npm start
+  
+2. Open the index.html file and replace the title tag from React App to TODO App.
 
-In the project directory, you can run:
+3. Open the src/App.js file and change the content of the paragraph tag (<p>) to &lt;h1&gt;TODO React App&lt;/h1&gt; (verify that the changes are reflected inmediately on your browser after you save without re-running your server).
+  
+  ![image](https://user-images.githubusercontent.com/48265107/107611866-f45ed980-6c12-11eb-9d33-331e7a0d2b05.png)
 
-### `npm start`
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Go to Codecademy, register and do the first two modules (JSX and React Components) of the following course: https://www.codecademy.com/learn/react-101
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/48265107/107611907-0b9dc700-6c13-11eb-9d31-d2febfeef630.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Part 2: Create React Components for the TODO App
 
-### `npm run build`
+1. Create a new JavaScript file called Todo.js under the src folder and add the following code:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/48265107/107611981-2f610d00-6c13-11eb-9b8b-e89fff900b96.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Read about React Components & Props: https://reactjs.org/docs/components-and-props.html
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Once your understand these concepts, add the JSX code to display the TODO information. You will access the TODO data by using the react props text, priority and dueDate as in the following example (notice the curly braces inside the HTML are used to evaluate a JavaScript expression).
+  
+  ![image](https://user-images.githubusercontent.com/48265107/107612041-56b7da00-6c13-11eb-820e-bd60ff843851.png)
 
-### `npm run eject`
+4. Create another React Component called TodoList. This Component should render a list of Todo components. You can access the todo list by using the props: this.props.todoList. Start by importing the Todo component and the React module:
+    
+    ![image](https://user-images.githubusercontent.com/48265107/107612121-89fa6900-6c13-11eb-9b80-fa89eadbc512.png)
+  
+5. hint: You should use the map function to dynamically create your list inside the render method as in the following example: https://codepen.io/gaearon/pen/jrXYRR?editors=0011
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](https://user-images.githubusercontent.com/48265107/107612189-b1e9cc80-6c13-11eb-92ea-9eb8e4ff9650.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Run your application and verify that it works as expected:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://user-images.githubusercontent.com/48265107/107612243-caf27d80-6c13-11eb-9aec-392bcf9a111a.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Part 3: Interacting with React Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Go back the Codecademy website and do the last module (Components Interacting) of the Learn ReactJS: Part I course.
 
-### Code Splitting
+![image](https://user-images.githubusercontent.com/48265107/107612308-f6756800-6c13-11eb-88c2-dd4621b2c47e.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Use the following code (taken from the React website) as a reference to create a form that captures the data of a Todo activity (text, priority and date), and adds the new object to the list.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
